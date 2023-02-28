@@ -24,7 +24,7 @@
         }
         return $a;
     }
-    $a = array(5, 10, 15, 'infosolutions', 'sigma');
+    $a = array(15, 10, 5, 'infosolutions', 'sigma');
     print_r(array_sort($a));
     ?>
 </body>

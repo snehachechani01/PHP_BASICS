@@ -8,25 +8,26 @@
 </head>
 <body>
 <?php
-for ($i = 1; $i <= 50; $i++)
+for ($i = 1; $i <= 100; $i++)
 {
   if ( $i%3 == 0 && $i%5 == 0 )
    {
-     echo $i . " FizzBuzz"."<br>" ;
+     echo  " FizzBuzz"."<br>" ;
    }
   else if ( $i%3 == 0 ) 
    {
-     echo $i. " Fizz" . "<br>";
+     echo  " Fizz"."<br>";
    }
      else if ( $i%5 == 0 ) 
    {
-     echo $i. " Buzz"."<br>";
+     echo  " Buzz"."<br>";
    }
      else
    {
-     echo $i."\n";
+     echo $i."<br>";
    }
  }
+?>
 ?>
 </body>
 </html>

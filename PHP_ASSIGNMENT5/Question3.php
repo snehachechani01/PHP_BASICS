@@ -11,29 +11,35 @@
 <body>
     <?php
 
-    function Palindrome($number)
-    {
-        $temp = $number;
-        $new = 0;
-        while (floor($temp)) {
-            $rem = $temp % 10;
-            $new = $new * 10 + $rem;
-            $temp = $temp / 10;
-        }
-        if ($new == $number) {
-            return 1;
-        } else {
-            return 0;
-        }
-    }
+   
 
 
-    $original= 14415;
-    if (Palindrome($original)) {
-        echo "Palindrome";
-    } else {
-        echo "Not a Palindrome";
+function Palindrome($MyString) {
+  $l = 0;
+  $r = strlen($MyString) - 1;
+  $flag = 0;
+
+  while($r > $l){
+    if ($MyString[$l] != $MyString[$r]){
+      $flag = 1;
+      break;
     }
+    $l++;
+    $r--;
+  }
+
+  if ($flag == 0){
+    echo $MyString." is a Palindrome string.\n";
+  } else {
+    echo $MyString." is not a Palindrome string.\n";
+  }
+}
+
+Palindrome("radar");
+Palindrome("rubber");
+Palindrome("malayalam");
+?>
+
 
     ?>
 </body>
