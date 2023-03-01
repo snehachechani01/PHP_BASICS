@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h1>Reading rss feed using PHP</h1>
+<h1>Reading RSS Feed using PHP</h1>
 
 <form action="/PHP_BASICS/PHP_ASSIGNMENT8/Question1.php" method="post">
  
