@@ -1,5 +1,5 @@
-
 <?php
+
 class RssFeed {
     private $url;
 
@@ -17,14 +17,17 @@ class RssFeed {
             foreach(libxml_get_errors() as $error) {
                 echo "\t", $error->message;
             }
+        }else if($rss_feed===""){
+                echo "";
+            
         } else {
             echo "<pre>";
             print_r($rss_feed);
             echo "</pre>";
         }
+
     }
 }
-
 $url = $_POST['rssurl'];
 $rss = new RssFeed($url);
 $rss->getFeed();
