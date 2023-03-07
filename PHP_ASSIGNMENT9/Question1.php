@@ -40,7 +40,7 @@ class FileUploader
             $updatedRows = array();
 
             while (($row = fgetcsv($handle, 1000, ",")) !== FALSE) {
-                array_unshift($row, "update your data");
+                array_unshift($row, "updated data");
                 $updatedRows[] = $row;
             }
             array_pop($updatedRows);
